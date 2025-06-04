@@ -58,7 +58,6 @@ h1 {
 }
 
 /* Navigation styles with dropdown toggle */
-
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -71,7 +70,6 @@ nav {
 }
 
 /*Nav Toggle Button*/
-
 #nav-toggle:checked ~ nav {
     display: block;
 }
@@ -96,6 +94,8 @@ main {
 footer {
     background-color: orange;
 }
+
+
 
 /* Media Query: tablet and larger screens (768px and above) */
 @media screen and (min-width: 768px) {
@@ -128,5 +128,12 @@ footer {
     /* Main content */
     main {
         margin-top: 79px; /* Remove top margin on larger screens */
+    }
+}
+
+/* Media Query: Laptop and larger screens (992px and above) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
