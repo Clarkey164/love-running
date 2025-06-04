@@ -96,3 +96,26 @@ main {
 footer {
     background-color: orange;
 }
+
+/* Media Query: tablet and larger screens (768px and above) */
+@media screen and (min-width: 768px) {
+    nav {
+        position: relative; /* Change to static for larger screens */
+        display: inline-block; /* Show the nav by default */
+        box-shadow: none; /* Remove shadow for larger screens */
+        width: fit-content; /* Adjust width to fit content */
+        padding-right: 1rem;
+    }
+
+#menu {
+        display: flex; /* Use flexbox for horizontal layout */
+    }
+
+    #menu li {
+        padding-left: 1em; /* Horizontal spacing between menu items */
+    }
+
+    .nav-toggle-label {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}
